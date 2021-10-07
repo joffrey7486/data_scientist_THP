@@ -31,7 +31,6 @@ def less_6000(my_hash)
 
         end    
     end
-    # puts under_6k_currencies
     return under_6k_currencies
 end
 
