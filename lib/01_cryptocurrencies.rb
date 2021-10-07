@@ -43,6 +43,7 @@ def perform
     my_hash = data_base_creation
     get_bullish(my_hash)
     get_bearish(my_hash)
+    less_6000(my_hash)
     under_6k_currencies = less_6000(my_hash)
     max_6k(under_6k_currencies)
 end
