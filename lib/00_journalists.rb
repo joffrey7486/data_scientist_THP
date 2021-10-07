@@ -34,12 +34,12 @@ end
 
 def ascending_sort(journalist_table)
     new_journalist_table = journalist_table.sort{|a, b| a <=> b}
-    #puts new_journalist_table
+    puts new_journalist_table
 end
 
 def size_sort(journalist_table)
     little_to_big = journalist_table.sort{|a, b| a.length <=> b.length}
-    #puts little_to_big
+    puts little_to_big
 end
 
 def science_pos(journalist_table)
