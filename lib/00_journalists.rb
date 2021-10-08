@@ -30,6 +30,8 @@ def first_uppercase(journalist_table)
         end
     end
     puts "Le nombre de handle commençant par une majuscule sont de #{count_upcase}"
+    puts "Appuyer sur entrée pour la suite"
+    gets.chomp
 end
 
 def ascending_sort(journalist_table)
@@ -44,6 +46,8 @@ end
 
 def science_pos(journalist_table)
     puts "L'index de epenser est le numéro #{journalist_table.index("@epenser")}"
+    puts "Appuyer sur entrée pour la suite"
+    gets.chomp
 end
 
 def bool_verif_length(journalist_table, i)
