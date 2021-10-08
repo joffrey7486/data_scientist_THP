@@ -20,6 +20,8 @@ end
 def get_bearish(my_hash)
     min_hash = my_hash.min_by {|a,b| b}
     puts "La plus petite valeur est #{min_hash[0]} avec un cours à #{"%.8f" % min_hash[1]} $."
+    puts "Appuyer sur entrée pour la suite"
+    gets.chomp
 end
 
 def less_6000(my_hash)
@@ -32,6 +34,8 @@ def less_6000(my_hash)
         end    
     end
     return under_6k_currencies
+    puts "Appuyer sur entrée pour la suite"
+    gets.chomp
 end
 
 def max_6k(under_6k_currencies)
@@ -43,9 +47,9 @@ def perform
     my_hash = data_base_creation
     get_bullish(my_hash)
     get_bearish(my_hash)
-    less_6000(my_hash)
-    under_6k_currencies = less_6000(my_hash)
-    max_6k(under_6k_currencies)
+    #less_6000(my_hash)
+    #under_6k_currencies = less_6000(my_hash)
+    #max_6k(under_6k_currencies)
 end
 
 
